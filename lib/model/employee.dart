@@ -2,9 +2,9 @@ class Employee {
   String id;
   String? managerId;
   String name;
-  double salary;
+  double? salary;
 
-  Employee.formJson(Map json)
+  Employee.fromJson(Map json)
       : id = json['id'],
         managerId = json['managerId'],
         name = json['name'],
